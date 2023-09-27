@@ -55,7 +55,7 @@ RUN yum -y --skip-broken install \
            libcurl-devel
 
 # create notebook user
-RUN useradd -m -p $(openssl passwd 2aN5#CLI^nQ2Lqlji) notebook_user
+RUN useradd -m -p $(openssl passwd 2aN5#CLI^nQ2Lqlj) notebook_user
 RUN usermod -u 1001 notebook_user
 RUN usermod -g 0 notebook_user
 RUN chown -R notebook_user:root /home/notebook_user
