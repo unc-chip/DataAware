@@ -112,7 +112,7 @@ RUN echo "c.NotebookApp.port = 8888" >> /home/notebook_user/.jupyter/jupyter_not
 RUN echo "c.NotebookApp.token = ''" >> /home/notebook_user/.jupyter/jupyter_notebook_config.py
 RUN echo "c.NotebookApp.notebook_dir = '/home/notebook_user/'" >> /home/notebook_user/.jupyter/jupyter_notebook_config.py
 #RUN echo "c.NotebookApp.password = 'sha1:b39ab64d70ae:f28f1468a2f5ceca16cdfac6628864746dec68b1'"  >> /home/notebook_user/.jupyter/jupyter_notebook_config.py
-RUN echo "c.NotebookApp.password = 'argon2:$argon2id$v=19$m=10240,t=10,p=8$CNu2uGLOpptarcCYVoCY1Q$3lCg1EKjPDSYOyyUMuU0Q4z783BuFoN6iO94KOXB6v0'"  >> /home/notebook_user/.jupyter/jupyter_notebook_config.py
+RUN echo "c.NotebookApp.password = 'sha1:d668c77d540b:573a3d50d0192415f7b7e7112ecd5e462b25b254'"  >> /home/notebook_user/.jupyter/jupyter_notebook_config.py
 RUN echo "c.NotebookApp.allow_password_change = False"
 RUN jupyter contrib nbextension install
 RUN jupyter nbextension enable --py widgetsnbextension
